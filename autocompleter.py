@@ -14,5 +14,5 @@ def get_suggestions(input, substrs_tree):
 def get_completions(input, storage_tree, data_as_dict):
     cleared_input = clear_str(input)
     suggestions = get_suggestions(cleared_input, storage_tree)
-    suggestions = [data_as_dict[item[0]].completed_sentence for item in suggestions]
+    #suggestions = [data_as_dict[item[0]].completed_sentence for item in suggestions]
     return suggestions
