@@ -1,0 +1,14 @@
+The header lines were kept separate because they looked like mail
+headers and I have mailmode on.  The same thing applies to Bozo's
+quoted text.  Mailmode doesn't screw things up very often, but since
+most people are usually converting non-mail, it's off by default.
+
+Paragraphs are handled ok.  In fact, this one is here just to
+demonstrate that.
+
+THIS LINE IS VERY IMPORTANT!
+(Ok, it wasn't *that* important)
+This header was in the same style, so it was assigned the same header
+tag.  Note the anchor names in the HTML. (You probably can't see them
+in your current document view.)  Its anchor is named "section_1_2". 
+Get the picture?
