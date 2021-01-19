@@ -8,7 +8,6 @@ class AutoCompleteData:
     offset: int
     score: int
 
-
     def init_completed_sentence(self, sentence):
         self.completed_sentence = sentence
 

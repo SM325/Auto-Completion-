@@ -1,6 +1,6 @@
 class Node:
     def __init__(self, data):
-        self.children = {}#[(letter: Node), (letter2, Node2)]
+        self.children = {}#{(letter: Node), (letter2, Node2)}
         self.data = data#[(id1, offset1), (id2, offset2)..]
 
     def add_child(self, sentence_id, offset, letter):
