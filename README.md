@@ -20,6 +20,6 @@ c. Run the online stage
 python controller.py
  ```
 
-Example
+Demo
 -----------
-![Demo](https://user-images.githubusercontent.com/70665664/105208287-34212c80-5b51-11eb-99a5-381d51b7aa41.mp4)
+![Demo](https://user-images.githubusercontent.com/70665664/105210919-58cad380-5b54-11eb-92b6-c2266d628369.gif)
