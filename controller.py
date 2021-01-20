@@ -16,7 +16,8 @@ def print_completions(completions):
         path_ = auto_complete_obj.source_text
         offset = auto_complete_obj.offset
         score = auto_complete_obj.score
-        print("{}. {} ({}, offset: {}), score: {}".format(i + 1, str_, path_, offset, score))
+        # print("{}. {} ({}, offset: {}), score: {}".format(i + 1, str_, path_, offset, score))
+        print("{}. {} ({}, offset: {})".format(i + 1, str_, path_, offset))
 
 
 def get_most_relevant(completions):
@@ -47,16 +48,18 @@ def get_best_k_completions(prefix: str):
 
 def run():
     while True:
-        to_end = False
         print_before = "The system is ready. Enter your text:\n"
+        to_end = False
         input_val = ""
         while not to_end:
             input_val = input_val + get_input_from_user(print_before)
             print_before = input_val
             if input_val[-1] == '#':
                 to_end = True
-            best_completions = get_best_k_completions(input_val)
-            print_completions(best_completions)
+            else:
+                best_completions = get_best_k_completions(input_val)
+                print_completions(best_completions)
+                
 
 
 run()
